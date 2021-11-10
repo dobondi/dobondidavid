@@ -13,6 +13,10 @@ let item_1 = document.getElementById("item-1");
 let item_2 = document.getElementById("item-2");
 let item_3 = document.getElementById("item-3");
 
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('service-worker.js');
+}
+
 const toggleMore = (e) =>{
     e.preventDefault();
 

@@ -46,12 +46,12 @@
                 <a class="Logo" href="#home">
                     <img src="assets/images/Logo.svg" width="" height="" alt="Return to homepage" />
                 </a>
-                <button id="hamburger" class="Hamburger">
-                    <img src="assets/images/hamburger.svg" alt="">
+                <button aria-label="Main Menu" id="hamburger" class="Hamburger">
+                    <img src="assets/images/hamburger.svg" alt="Open the main menu">
                 </button>
                 <nav id="menu" class="Menu">
                     <ul id="menu-list" class="MenuList">
-                        <li id="item-1" class="MenuItem "><a id="link-1 DownLink" href="#projects" class="MenuLink">Projects</a></li>
+                        <li id="item-1" class="MenuItem "><a id="link-1" href="#projects" class="MenuLink">Projects</a></li>
                         <li id="item-2" class="MenuItem "><a id="link-2" href="#skills" class="MenuLink">Skills</a></li>
                         <li id="item-3" class="MenuItem "><a id="link-3" href="#contact" class="MenuLink">Contact</a></li>
                     </ul>
@@ -74,24 +74,22 @@
                     <div class="ProfileImage">
                     <a href="https://linkedin.com/in/daviddobondi">
                     <picture >
-                        <source srcset="assets/images/ProfileBig.webp" type="image/webp" media="(min-width: 480px)" />
-                        <source srcset="assets/images/ProfileBig.png" type="image/png" media="(min-width: 480px)" />
-                        <source srcset="assets/images/ProfileBig.webp" type="image/webp" media="" />
-                        <source srcset="assets/images/ProfileBig.png" type="image/png" media="" />
+                        <source srcset="assets/images/ProfileBig.webp" type="image/webp" />
+                        <source srcset="assets/images/ProfileBig.png" type="image/png"/>
                         <img src="assets/images/ProfileBig.webp" alt="David Dobondi's portrait" />
                     </picture>
                 </a>
             </div>
                     </div>
                     <div class="Socials">
-                        <a target="_blank" href="https://github.com/dobondi" class="SocialLink Github">
-                            <img src="assets/images/Github.svg" />
+                        <a target="_blank" aria-label="Github" rel="noopener" href="https://github.com/dobondi" class="SocialLink Github">
+                            <img src="assets/images/Github.svg" alt="Github" />
                         </a>
-                        <a target="_blank" href="https://linkedin.com/in/daviddobondi" class="SocialLink Linkedin">
-                            <img src="assets/images/Linkedin.svg" />
+                        <a target="_blank" aria-label="LinkedIn" rel="noopener" href="https://linkedin.com/in/daviddobondi" class="SocialLink Linkedin">
+                            <img src="assets/images/Linkedin.svg" alt="LinkedIn"/>
                         </a>
-                        <a href="mailto:dobondiwork@gmail.com" class="SocialLink Mail">
-                            <img src="assets/images/Mail.svg" />
+                        <a href="mailto:dobondiwork@gmail.com" aria-label="Mail" class="SocialLink Mail">
+                            <img src="assets/images/Mail.svg" alt="dobondiwork@gmail.com"/>
                         </a>
                     </div>
                 </div>
@@ -102,130 +100,118 @@
                     <h2 class="SectionHeading">Projects</h2>
                     <div class="ProjectsGrid">
                         <div class="Project">
-                            <a target="_blank" class="ImageLink" href="https://dobondi.github.io/aqva-vr">
                                 <picture>
                                     <source srcset="assets/images/AqvaBig.webp" type="image/webp" media="(min-width: 480px)" />
                                     <source srcset="assets/images/AqvaBig.png" type="image/png" media="(min-width: 480px)" />
-                                    <source srcset="assets/images/AqvaSmall.webp" type="image/webp" media="" />
-                                    <source srcset="assets/images/AqvaSmall.png" type="image/png" media="" />
+                                    <source srcset="assets/images/AqvaSmall.webp" type="image/webp" />
+                                    <source srcset="assets/images/AqvaSmall.png" type="image/png" />
                                     <img src="assets/images/AqvaBig.webp" alt="Aqva's live website" class="ProjectImage"/>
                                 </picture>
-                            </a>
                             <div class="ProjectContent">
-                            <a target="_blank" class="TitleLink" href="https://dobondi.github.io/aqva-vr">
+                            <a target="_blank" rel="noopener" class="TitleLink" href="https://github.com/dobondi/aqva-vr">
                                 <h3 class="ProjectTitle">Aqva-VR</h3>
                             </a>
 
                             <p class="ProjectInfo">Come join the biggest virtual reality community that specializes in aquatic landscapes. Sign up for our free trial.</p>
 
 
-                            <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/aqva-vr"> See Live </a>
+                            <a target="_blank" rel="noopener" class="SecondaryButton LiveLink" href="https://dobondi.github.io/aqva-vr"> See Live </a>
                         </div>
                         </div>
                         <div class="Project">
-                            <a target="_blank" class="ImageLink" href="https://dobondi.github.io/splice-clone">
                                 <picture>
                                     <source srcset="assets/images/SpliceBig.webp" type="image/webp" media="(min-width: 480px)" />
                                     <source srcset="assets/images/SpliceBig.png" type="image/png" media="(min-width: 480px)" />
-                                    <source srcset="assets/images/SpliceSmall.webp" type="image/webp" media="" />
-                                    <source srcset="assets/images/SpliceSmall.png" type="image/png" media="" />
+                                    <source srcset="assets/images/SpliceSmall.webp" type="image/webp" />
+                                    <source srcset="assets/images/SpliceSmall.png" type="image/png" />
                                     <img src="assets/images/SpliceBig.webp" alt="Splice's live website" class="ProjectImage"/>
                                 </picture>
-                            </a>
                             <div class="ProjectContent">
-                            <a target="_blank" class="TitleLink" href="https://dobondi.github.io/splice-clone">
+                            <a target="_blank" rel="noopener" class="TitleLink" href="https://github.com/dobondi/splice-clone">
                                 <h3 class="ProjectTitle">Splice-Clone</h3>
                             </a>
 
                             <p class="ProjectInfo">Splice is the leading platform for music production offering access to millions of the best royalty-free samples, loops, and presets.</p>
 
 
-                            <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/splice-clone"> See Live </a>
+                            <a target="_blank" rel="noopener" class="SecondaryButton LiveLink" href="https://dobondi.github.io/splice-clone"> See Live </a>
                         </div>
                         </div>
                         <a id="see-more" class="SeeMore"> See More <img id="arrow-icon" class="ArrowIcon" src="assets/images/arrow.svg" /> </a>
                         <div id="no-show1" class="Project NoShow">
-                            <a target="_blank" class="ImageLink" href="https://dobondi.github.io/zerobank">
                                 <picture>
                                     <source srcset="assets/images/ZerobankBig.webp" type="image/webp" media="(min-width: 480px)" />
                                     <source srcset="assets/images/ZerobankBig.png" type="image/png" media="(min-width: 480px)" />
-                                    <source srcset="assets/images/ZerobankSmall.webp" type="image/webp" media="" />
-                                    <source srcset="assets/images/ZerobankSmall.png" type="image/png" media="" />
+                                    <source srcset="assets/images/ZerobankSmall.webp" type="image/webp"  />
+                                    <source srcset="assets/images/ZerobankSmall.png" type="image/png"  />
                                     <img src="assets/images/ZerobankBig.webp" alt="Zerobank's live website" class="ProjectImage"/>
                                 </picture>
-                            </a>
                             <div class="ProjectContent">
-                            <a target="_blank" class="TitleLink" href="https://dobondi.github.io/zerobank">
+                            <a target="_blank" rel="noopener" class="TitleLink" href="https://github.com/dobondi/zerobank">
                                 <h3 class="ProjectTitle">Zero Bank</h3>
                             </a>
 
                             <p class="ProjectInfo">Your favourite modern, digital bank. Send and receive money fast & easy. Create a free account now.</p>
 
 
-                            <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/zerobank"> See Live </a>
+                            <a target="_blank" rel="noopener" class="SecondaryButton LiveLink" href="https://dobondi.github.io/zerobank"> See Live </a>
                         </div>
                         </div>
                         <div id="no-show2" class="Project NoShow">
-                            <a target="_blank" class="ImageLink" href="https://dobondi.github.io/cinemateca">
                                 <picture>
                                     <source srcset="assets/images/CinematecaBig.webp" type="image/webp" media="(min-width: 480px)" />
                                     <source srcset="assets/images/CinematecaBig.png" type="image/png" media="(min-width: 480px)" />
-                                    <source srcset="assets/images/CinematecaSmall.webp" type="image/webp" media="" />
-                                    <source srcset="assets/images/CinematecaSmall.png" type="image/png" media="" />
+                                    <source srcset="assets/images/CinematecaSmall.webp" type="image/webp"  />
+                                    <source srcset="assets/images/CinematecaSmall.png" type="image/png"  />
                                     <img src="assets/images/CinematecaBig.webp" alt="Cinemateca's live website" class="ProjectImage"/>
                                 </picture>
-                            </a>
                             <div class="ProjectContent">
-                            <a target="_blank" class="TitleLink" href="https://dobondi.github.io/cinemateca">
+                            <a target="_blank" rel="noopener" class="TitleLink" href="https://github.com/dobondi/cinemateca">
                                 <h3 class="ProjectTitle">Cinemateca</h3>
                             </a>
 
                             <p class="ProjectInfo">Movies, series and people. Search your favorite film-related topics,  find popular and best rated cinema.</p>
 
 
-                            <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/cinemateca"> See Live </a>
+                            <a target="_blank" rel="noopener" class="SecondaryButton LiveLink" href="https://dobondi.github.io/cinemateca"> See Live </a>
                         </div>
                         </div>
                         <div id="no-show3" class="Project NoShow">
-                            <a target="_blank" class="ImageLink" href="https://dobondi.github.io/ell-boutique">
                                 <picture>
                                     <source srcset="assets/images/EllboutiqueBig.webp" type="image/webp" media="(min-width: 480px)" />
                                     <source srcset="assets/images/EllboutiqueBig.png" type="image/png" media="(min-width: 480px)" />
-                                    <source srcset="assets/images/EllboutiqueSmall.webp" type="image/webp" media="" />
-                                    <source srcset="assets/images/EllboutiqueSmall.png" type="image/png" media="" />
+                                    <source srcset="assets/images/EllboutiqueSmall.webp" type="image/webp"  />
+                                    <source srcset="assets/images/EllboutiqueSmall.png" type="image/png"  />
                                     <img src="assets/images/EllboutiqueBig.webp" alt="Ellboutique's live website" class="ProjectImage"/>
                                 </picture>
-                            </a>
                             <div class="ProjectContent">
-                            <a target="_blank" class="TitleLink" href="https://dobondi.github.io/ell-boutique">
+                            <a target="_blank" rel="noopener" class="TitleLink" href="https://github.com/dobondi/ell-boutique">
                                 <h3 class="ProjectTitle">Ell Boutique</h3>
                             </a>
 
                             <p class="ProjectInfo">Come shop the latest and greatest dresses, shoes, hats & more. Join the Ell Boutique community. </p>
 
 
-                            <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/ell-boutique"> See Live </a>
+                            <a target="_blank" rel="noopener" class="SecondaryButton LiveLink" href="https://dobondi.github.io/ell-boutique"> See Live </a>
                         </div>
                         </div>
                         <div id="no-show4" class="Project NoShow">
-                            <a target="_blank" class="ImageLink" href="https://dobondi.github.io/mate-cnmn">
                                 <picture>
                                     <source srcset="assets/images/CNMNBig.webp" type="image/webp" media="(min-width: 480px)" />
                                     <source srcset="assets/images/CNMNBig.png" type="image/png" media="(min-width: 480px)" />
-                                    <source srcset="assets/images/CNMNSmall.webp" type="image/webp" media="" />
-                                    <source srcset="assets/images/CNMNSmall.png" type="image/png" media="" />
+                                    <source srcset="assets/images/CNMNSmall.webp" type="image/webp"  />
+                                    <source srcset="assets/images/CNMNSmall.png" type="image/png"  />
                                     <img src="assets/images/CNMNBig.webp" alt="Mate-CNMN's live website" class="ProjectImage"/>
                                 </picture>
-                            </a>
                             <div class="ProjectContent">
-                            <a target="_blank" class="TitleLink" href="https://dobondi.github.io/mate-cnmn">
+                            <a target="_blank" rel="noopener" class="TitleLink" href="https://github.com/dobondi/mate-cnmn">
                                 <h3 class="ProjectTitle">Mate CNMN</h3>
                             </a>
 
                             <p class="ProjectInfo">Moise Nicoara high school’s Mathematics website. Resources filled with math problems, articles events and a lot more.</p>
 
 
-                            <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/mate-cnmn"> See Live </a>
+                            <a target="_blank" rel="noopener" class="SecondaryButton LiveLink" href="https://dobondi.github.io/mate-cnmn"> See Live </a>
                         </div>
                         </div>
 
@@ -294,14 +280,15 @@
                         <form class="ContactForm" action="https://formspree.io/f/mdoyqoge" method="post">
                             <div class="InputContainer">
                                 <img src="assets/images/avatar.svg" alt="" />
-                                <input type="text" name="name" id="name" placeholder="Name" required />
+            
+                                <input aria-label="name" type="text" name="name" id="name" placeholder="Name" required />
                             </div>
                             <div class="InputContainer">
                                 <img src="assets/images/form-mail.png" alt="" />
-                                <input type="email" placeholder="Email" name="email" id="email" required />
+                                <input aria-label="email" type="email" placeholder="Email" name="email" id="email" required />
                             </div>
                             <div class="TextSection">
-                                <textarea class="Message" placeholder="Message" id="message" name="message" rows="12"></textarea>
+                                <textarea aria-label="message" class="Message" placeholder="Message" id="message" name="message" rows="12"></textarea>
                             </div>
                             <input class="Submit PrimaryButton" id="submit" type="submit" name="sumbit" value="Submit" />
                         </form>
@@ -309,18 +296,18 @@
    
                             <p class="ContactText">Thank you for checking out my website, I hope we can work together in the near future. You can contact me using the form on the left, or at this email address: <br><br><a class="MailLink" href="mailto:dobondiwork@gmail.com">dobondiwork@gmail.com</a><br> Also you can find me on my socials links down below.</p>
                             <div class="ContactSocials">
-                                <a target="_blank" href="https://github.com/dobondi" class="SocialLink Github">
-                                    <img src="assets/images/Github.svg" />
+                                <a target="_blank" aria-label="Github" rel="noopener" href="https://github.com/dobondi" class="SocialLink Github">
+                                    <img src="assets/images/Github.svg" alt="Github"/>
                                 </a>
-                                <a target="_blank" href="https://linkedin.com/in/daviddobondi" class="SocialLink Linkedin">
-                                    <img src="assets/images/Linkedin.svg" />
+                                <a target="_blank" aria-label="LinkedIn"  rel="noopener" href="https://linkedin.com/in/daviddobondi" class="SocialLink Linkedin">
+                                    <img src="assets/images/Linkedin.svg" alt="LinkedIn"/>
                                 </a>
                             </div>
                             <picture class="Stars">
                                 <source srcset="assets/images/StarsBig.webp" type="image/webp" media="(min-width: 480px)" />
                                 <source srcset="assets/images/StarsBig.png" type="image/png" media="(min-width: 480px)" />
-                                <source srcset="assets/images/StarsSmall.webp" type="image/webp" media="" />
-                                <source srcset="assets/images/StarsSmall.png" type="image/png" media="" />
+                                <source srcset="assets/images/StarsSmall.webp" type="image/webp"  />
+                                <source srcset="assets/images/StarsSmall.png" type="image/png"  />
                                 <img src="assets/images/StarsBig.webp" alt="" />
                             </picture>
                             

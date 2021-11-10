@@ -345,7 +345,6 @@ p {
 }
 
 .ProfileImage {
-  margin-left: 4rem;
   margin-top: 4rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -366,6 +365,7 @@ p {
 @media (min-width: 768px) {
   .ProfileImage {
     margin-top: 0;
+    margin-left: 4rem;
   }
 }
 
@@ -531,12 +531,6 @@ p {
   .ProjectImage {
     width: clamp(231px, 35vw, 441px);
   }
-}
-
-.ProjectImage:hover {
-  opacity: 0.7;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
 }
 
 .TitleLink {
