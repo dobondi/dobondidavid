@@ -55,6 +55,8 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 480px) {
@@ -100,6 +102,41 @@ p {
   }
 }
 
+.DownMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.DownMenuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 66%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.DownMenuItem {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: 2px solid #3913b8;
+  border-radius: 1.25rem;
+}
+
+.DownMenuItem:hover {
+  background-color: #2fb5fc;
+  font-weight: 700;
+}
+
 .Hamburger {
   border: none;
   background: none;
@@ -109,6 +146,10 @@ p {
   .Hamburger {
     display: none;
   }
+}
+
+.Hamburger:hover {
+  cursor: pointer;
 }
 
 .HeroContainer {
@@ -561,6 +602,7 @@ p {
 }
 
 .SeeMore:hover {
+  cursor: pointer;
   color: #2fb5fc;
   -webkit-transition: 0.2s;
   transition: 0.2s;

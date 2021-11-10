@@ -46,14 +46,14 @@
                 <a class="Logo" href="#home">
                     <img src="assets/images/Logo.svg" width="" height="" alt="Return to homepage" />
                 </a>
-                <button class="Hamburger">
+                <button id="hamburger" class="Hamburger">
                     <img src="assets/images/hamburger.svg" alt="">
                 </button>
-                <nav class="Menu">
-                    <ul class="MenuList">
-                        <li class="MenuItem"><a href="#projects" class="MenuLink">Projects</a></li>
-                        <li class="MenuItem"><a href="#skills" class="MenuLink">Skills</a></li>
-                        <li class="MenuItem"><a href="#contact" class="MenuLink">Contact</a></li>
+                <nav id="menu" class="Menu">
+                    <ul id="menu-list" class="MenuList">
+                        <li id="item-1" class="MenuItem "><a href="#projects" class="MenuLink">Projects</a></li>
+                        <li id="item-2" class="MenuItem "><a href="#skills" class="MenuLink">Skills</a></li>
+                        <li id="item-3" class="MenuItem "><a href="#contact" class="MenuLink">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -143,8 +143,8 @@
                             <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/splice-clone"> See Live </a>
                         </div>
                         </div>
-                        <a href="#" class="SeeMore"> See More <img class="ArrowIcon" src="assets/images/arrow.svg" /> </a>
-                        <div class="Project NoShow">
+                        <a id="see-more" class="SeeMore"> See More <img id="arrow-icon" class="ArrowIcon" src="assets/images/arrow.svg" /> </a>
+                        <div id="no-show1" class="Project NoShow">
                             <a target="_blank" class="ImageLink" href="https://dobondi.github.io/zerobank">
                                 <picture>
                                     <source srcset="assets/images/ZerobankBig.webp" type="image/webp" media="(min-width: 480px)" />
@@ -165,7 +165,7 @@
                             <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/zerobank"> See Live </a>
                         </div>
                         </div>
-                        <div class="Project NoShow">
+                        <div id="no-show2" class="Project NoShow">
                             <a target="_blank" class="ImageLink" href="https://dobondi.github.io/cinemateca">
                                 <picture>
                                     <source srcset="assets/images/CinematecaBig.webp" type="image/webp" media="(min-width: 480px)" />
@@ -186,7 +186,7 @@
                             <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/cinemateca"> See Live </a>
                         </div>
                         </div>
-                        <div class="Project NoShow">
+                        <div id="no-show3" class="Project NoShow">
                             <a target="_blank" class="ImageLink" href="https://dobondi.github.io/ell-boutique">
                                 <picture>
                                     <source srcset="assets/images/EllboutiqueBig.webp" type="image/webp" media="(min-width: 480px)" />
@@ -207,7 +207,7 @@
                             <a target="_blank" class="SecondaryButton LiveLink" href="https://dobondi.github.io/ell-boutique"> See Live </a>
                         </div>
                         </div>
-                        <div class="Project NoShow">
+                        <div id="no-show4" class="Project NoShow">
                             <a target="_blank" class="ImageLink" href="https://dobondi.github.io/mate-cnmn">
                                 <picture>
                                     <source srcset="assets/images/CNMNBig.webp" type="image/webp" media="(min-width: 480px)" />
@@ -331,5 +331,7 @@
                 </div>
             </section>
         </footer>
+        <script src="assets/js/script.js"></script>
     </body>
+    
 </html>
