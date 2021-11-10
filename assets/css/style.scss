@@ -107,15 +107,22 @@ p {
     text-align: center;
     margin: 0 auto;
 }
+.DownMenuItem a{
+    width: 100%;
+}
 .DownMenuItem{
     margin-top: 3rem;
-    padding: 1rem 2rem;
-    border: 2px solid $primary-color;
+    border: 4px solid $primary-color;
     border-radius: 1.25rem;
     &:hover{
         background-color: $secondary-color;
         font-weight: 700;
     }
+    display: flex;
+}
+.DownLink{
+    display: block;
+    width: 100%;
 }
 
 .Hamburger {
