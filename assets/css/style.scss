@@ -2,390 +2,670 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url('../fonts/Montserrat-VF.woff2');
+    src: url("../fonts/Montserrat-VF.woff2");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 
-
 /* || Colors */
 
 $text-color: black;
 $text-color-alt: white;
-$bg-color: #F2F6FF;
+$bg-color: #f2f6ff;
 $bg-color-alt: white;
-$primary-color: #3913B8;
+$primary-color: #3913b8;
 $secondary-color: #2fb5fc;
-$grey-color: #E0E0E0;
+$grey-color: #e0e0e0;
 $darker-gray-color: rgba(0, 0, 0, 0.5);
 
 /* || General Styles */
 
-html { 
+html {
     font-size: 62.5%; /* = 10px */
     font-family: Montserrat;
-    color: $text-color
-} 
+    color: $text-color;
+}
 
-body{
+body {
     font-size: 2.4rem; //big
     font-size: 1.8rem;
     font-weight: 400;
     background-color: $bg-color;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 7.2rem; //big
-    font-size: 3.6rem;
+    font-size: clamp(3.6rem, 6vw, 7.2rem);
     font-weight: 700;
 }
 
 h2 {
     font-size: 3.6rem; //big
-    font-size: 2.4rem;
+    font-size: clamp(2.4rem, 3.8vw, 3.6rem);
     font-weight: 700;
 }
 
 p {
     font-size: 2.4rem; //big
-    font-size: 1.8rem;
+    font-size: clamp(1.8rem, 2.9vw, 2.4rem);
     font-weight: normal;
 }
 
 /* || Custom Styles */
 
-
-.HeaderContainer{
+.HeaderContainer {
     padding: 2rem 2rem 0 2rem;
+    @media (min-width: 480px) {
+        padding: 4rem clamp(4rem, 10vw, 14rem) 0 clamp(4rem, 10vw, 14rem);
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Menu{
+.Menu {
     display: none;
+    @media (min-width: 480px) {
+        display: block;
+    }
 }
-.MenuList{
-    
+.MenuList {
+    display: flex;
+}
+.MenuItem {
+}
 
-}
-.MenuItem{
+.MenuItem a {
+    text-decoration: none;
+    padding: 1rem clamp(1rem, 3vw, 4rem);
+    color: $text-color;
+    font-size: clamp(1.8rem, 2.3vw, 3.6rem);
+    &:hover {
+        border-bottom: 2px solid $primary-color;
+        color: $primary-color;
+        font-weight: 700;
+        transition: 0.075s;
+        @media (min-width: 768px) {
+            border-width: 4px;
+        }
+    }
 }
 
-.Hamburger{
+.Hamburger {
     border: none;
     background: none;
+    @media (min-width: 480px) {
+        display: none;
+    }
 }
 
-.HeroContainer{
+.HeroContainer {
     margin-top: 2rem;
     padding: 0 2rem;
+    @media (min-width: 480px) {
+        padding: 0 clamp(4rem, 10vw, 14rem);
+        margin-top: clamp(4rem, 6vw, 12rem);
+    }
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.HeroContent{
+.HeroMain {
     display: flex;
     flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 }
-.Logo img{
+
+.HeroContent {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex: 1;
+    }
+}
+
+.Logo img {
     width: 45px;
     height: auto;
+    @media (min-width: 480px) {
+        width: 90px;
+        height: auto;
+    }
 }
 
-.MainHeading{
+.MainHeading {
     color: $primary-color;
     white-space: nowrap;
 }
 
-.MainSubHeading{
-    margin-top: 1rem;
+.MainSubHeading {
+    margin-top: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(2.4rem, 3.8vw, 4.8rem);
 }
 
-.MainIntro{
-    margin-top: 1rem;
+.MainIntro {
+    max-width: 580px;
+    margin-top: clamp(1rem, 2vw, 3rem);
     line-height: 1.2;
     font-weight: 500;
+    @media (min-width: 768px) {
+        font-size: clamp(2.4rem, 2vw, 3.6rem);
+    }
 }
 
-.HeroButtons{
-    margin-top: 1rem;
+.HeroButtons {
+    margin-top: clamp(2rem, 3vw, 4rem);
     display: flex;
 }
 
-.PrimaryButton{
+.PrimaryButton {
     display: flex;
     text-decoration: none;
     color: $text-color;
-    width: 12.5rem;
-    height: 5rem;
+    width: clamp(125px, 20vw, 200px);
+    height: clamp(50px, 8vw, 80px);
     background-color: $secondary-color;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 2.4rem);
     font-weight: 700;
     border-radius: 1.5rem;
     box-sizing: border-box;
+    @media (min-width: 768px) {
+        border-radius: 2.25rem;
+    }
+    transition: 0.2s;
+    &:hover {
+        background-color: $primary-color;
+        color: $text-color-alt;
+        transition: 0.2s;
+    }
+
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12);
 }
 
-.SecondaryButton{
+.SecondaryButton {
     display: flex;
     text-decoration: none;
     color: $text-color;
-    width: 12.5rem;
-    height: 5rem;
+    width: clamp(125px, 20vw, 200px);
+    height: clamp(50px, 8vw, 80px);
     border: 2px solid $secondary-color;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 2.4rem);
     font-weight: 700;
     border-radius: 1.5rem;
+    @media (min-width: 768px) {
+        border-radius: 2.25rem;
+    }
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $text-color-alt;
+        border: none;
+        transition: 0.2s;
+    }
+
     box-sizing: border-box;
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12);
 }
 
-.CTA1{
+.CTA1 {
     margin-right: 2rem;
 }
 
-.ProfileImage{
-    margin-top: 2rem;
-    width: 221px;
-    height: auto;
+.ProfileImage {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    flex: 1;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 
-.Socials{
-    display: flex;
-    width: 240px;
-    justify-content: space-between;
-    margin-top: 2rem;
+.ProfileImage img {
+    max-width: 441px;
+    width: clamp(221px, 50vw, 300px);
+    height: auto;
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+    transition: 0.1s;
+    &:hover {
+        opacity: 0.8;
+        transition: 0.1s;
+    }
 }
-.SocialLink{
+
+.Socials {
+    display: flex;
+    width: clamp(240px, 50vw, 420px);
+    justify-content: space-between;
+    margin-top: clamp(4rem, 5vw, 10rem);
+    align-self: center;
+}
+.SocialLink {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1.25rem;
-    width: 42px;
-    height: 42px;
-    img{
-        width: 24px;
+    width: clamp(42px, 10vw, 64px);
+    height: clamp(42px, 10vw, 64px);
+    img {
+        width: clamp(24px, 5vw, 36px);
         height: auto;
+    }
+    @media (min-width: 768px) {
+        border-radius: 2rem;
+    }
+    transition: 0.1s;
+
+    &:hover {
+        opacity: 0.6;
+        transition: 0.1s;
+    }
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12);
+}
+
+.Github {
+    background-color: black;
+}
+.Linkedin {
+    background-color: #2262af;
+}
+.Mail {
+    background-color: #d64a3a;
+}
+
+.Projects {
+    margin-top: clamp(4rem, 7vw, 15rem);
+}
+.ProjectsContainer {
+    padding: 0 2rem;
+    @media (min-width: 480px) {
+        padding: 0 clamp(4rem, 10vw, 14rem);
     }
 }
 
-
-.Github{
-    background-color: black;
+.SectionHeading {
+    padding-top: 4rem;
+    margin-bottom: 6rem;
 }
-.Linkedin{
-    background-color: #2262AF;
-}
-.Mail{
-    background-color: #D64A3A;
-}
-
-.Projects{
-    margin-top: 4rem;
-}
-.ProjectsContainer{
-    padding: 0 2rem;
-}
-
-.SectionHeading{
-    margin-bottom: 2rem;
-}
-.ProjectsGrid{
+.ProjectsGrid {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    row-gap: 1rem;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 4rem;
+    }
 }
-.Project{
+.Project {
     display: flex;
     flex-direction: column;
-    width: 231px;
+    width: clamp(231px, 50vw, 441px);
     border-radius: 1.25rem;
     overflow: hidden;
     background-color: $bg-color-alt;
     margin-bottom: 4rem;
+    @media (min-width: 768px) {
+        width: clamp(231px, 35vw, 441px);
+        border-radius: 3rem;
+    }
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12);
 }
 
-.TitleLink{
-    
+.NoShow {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.ProjectImage {
+    width: clamp(231px, 50vw, 441px);
+    height: auto;
+    @media (min-width: 768px) {
+        width: clamp(231px, 35vw, 441px);
+    }
+    transition: 0.1s;
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.1s;
+    }
+}
+
+.TitleLink {
+    width: fit-content;
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: clamp(2.4rem, 3.8vw, 3.6rem);
     font-weight: 700;
+    transition: 0.1s;
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+        border: none;
+        transition: 0.1s;
+    }
 }
 
-.ProjectContent{
+.ProjectContent {
     padding: 0 2rem;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
-.ProjectInfo{
+.ProjectInfo {
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 2.4rem);
     font-weight: 400;
     line-height: 1.3;
 }
 
-.LiveLink{
-    margin: 2rem 0;
-    width: 92px;
+.LiveLink {
+    margin: 2rem 0 4rem 0;
+    width: 120px;
     align-self: center;
+    @media (min-width: 768px) {
+        width: clamp(92px, 20vw, 180px);
+        margin: 4rem 0 6rem 0;
+    }
 }
 
-.SeeMore{
+.SeeMore {
     display: flex;
     align-items: center;
+    font-size: clamp(1.8rem, 2.9vw, 2.4rem);
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    padding: 1rem;
+    transition: 0.2s;
+    margin: -2rem 0 2rem 0;
+    &:hover {
+        color: $secondary-color;
+        transition: 0.2s;
+        .ArrowIcon {
+            filter: invert(79%) sepia(34%) saturate(7064%) hue-rotate(172deg) brightness(96%) contrast(107%);
+            transition: 0.2s;
+        }
+    }
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
-.ArrowIcon{
+.ArrowIcon {
     margin-left: 1rem;
+    transition: 0.2s;
 }
-.Skills{
-    margin-top: 2rem;
+.Rotate {
+    transition: 1s;
+    transform: rotate(180deg);
 }
-.SkillsContainer{
+.Skills {
+    margin-top: 4rem;
+    @media (min-width: 768px) {
+        margin-top: 10rem;
+    }
+}
+.SkillsContainer {
+    display: flex;
+    flex-direction: column;
     padding: 0 2rem;
+    @media (min-width: 480px) {
+        padding: 0 clamp(4rem, 10vw, 14rem);
+    }
 }
-.Abilities{
+.Abilities {
+    align-self: center;
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr;
+    width: 100%;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
 }
-.Ability{
+.Ability {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: $bg-color-alt;
-    width: 100%;
-    height: 6rem;
+    width: 280px;
+    height: 60px;
     border-radius: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+        width: clamp(231px, 35vw, 441px);
+        height: clamp(60px, 6vw, 90px);
+        font-weight: bold;
+        border-radius: 3rem;
+    }
+    box-sizing: border-box;
+    &:hover {
+        border: 4px solid $primary-color;
+    }
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12);
 }
-.AbilityText{
+.AbilityText {
     font-size: 1.8rem;
     font-weight: 500;
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
+    @media (min-width: 768px) {
+        font-weight: bold;
+    }
 }
 
-.Technologies{
+.Technologies {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     row-gap: 3rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 6rem;
+        row-gap: 6rem;
+        width: 75%;
+        align-self: center;
+        margin-top: 6rem;
+    }
 }
 
-.Technology img{
+.Technology img {
     width: auto;
     height: 68px;
+    @media (min-width: 768px) {
+        height: clamp(68px, 7vw, 90px);
+    }
 }
 
-.Footer{
-    margin-top: 2rem;
+.Footer {
+    margin-top: 4rem;
+    @media (min-width: 768px) {
+        margin-top: 10rem;
+    }
 }
-.ContactContainer{
+.ContactContainer {
     padding: 0 2rem;
-  
-}
-
-.ContactForm{
     display: flex;
     flex-direction: column;
-    
+    @media (min-width: 480px) {
+        padding: 0 clamp(4rem, 10vw, 14rem);
+    }
 }
 
-.InputContainer{
+.ContactContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: clamp(1rem, 4vw, 6rem);
+    }
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputContainer {
     background-color: $grey-color;
     border-radius: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    height: 4.8rem;
-    
-    input{
+    height: 48px;
+    @media (min-width: 768px) {
+        padding: 0 2rem;
+        height: 75px;
+        border-radius: 3rem;
+    }
+    input {
         margin-left: 1rem;
-        background: none;
+        background-color: inherit;
         border: none;
         outline: none;
-        font-size: 1.4rem;
+        font-size: clamp(1.4rem, 3vw, 2.4rem);
         font-family: Montserrat;
+        width: 100%;
+        &:focus {
+            background-color: inherit;
+        }
+        &:hover {
+            background-color: inherit;
+        }
+        &:active {
+            background-color: inherit;
+        }
     }
-    input::placeholder{
-        font-size: 1.4rem;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px $grey-color inset !important;
+    }
+
+    input::placeholder {
+        font-size: clamp(1.4rem, 3vw, 2.4rem);
         font-weight: 700;
         color: $darker-gray-color;
     }
-    img{
+    img {
         width: 1.8rem;
         height: auto;
     }
-    
 }
-.TextSection{
+.TextSection {
     background-color: $grey-color;
     padding: 0 2rem;
     border-radius: 1.25rem;
+    @media (min-width: 768px) {
+        border-radius: 3rem;
+    }
     color: $darker-gray-color;
     font-weight: 700;
     font-size: 1.4rem;
 }
-.Message{
+.Message {
     background-color: $grey-color;
     border: none;
-    
-    
+
     width: 100%;
     padding-top: 2rem;
     resize: none;
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
     outline: none;
+    @media (min-width: 768px) {
+        border-radius: 3rem;
+    }
 }
 
-textarea::placeholder{
+textarea::placeholder {
     font-family: Montserrat;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
     color: $darker-gray-color;
 }
 
-.Submit{
-    background: none;
-    margin-top: 1rem;
+.Submit {
+    border: none;
+    margin-top: 2rem;
     align-self: center;
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.ContactExtra{
-    margin-top: 2rem;
+.ContactExtra {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1024px) {
+        margin-top: 0;
+    }
+}
+
+.ContactText {
+    line-height: 1.3;
     display: flex;
     flex-direction: column;
 }
 
-.ContactText{
-    line-height: 1.3;
-}
-
-.MailLink{
+.MailLink {
+    align-self: center;
     text-decoration: none;
     color: $primary-color;
-    font-weight: 700;
-    
+    font-weight: 500;
+    text-align: center;
+    transition: 0.2s;
+    &:hover {
+        color: $secondary-color;
+        transition: 0.2s;
+    }
 }
 
-.ContactSocials{
+.ContactSocials {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4rem;
     justify-content: space-between;
     align-items: center;
-    width: 120px;
+    width: 50%;
     align-self: center;
 }
 
-.Stars{
-    margin: 2rem 0 4rem 0;
+.Stars {
+    margin: 4rem 0 4rem 0;
     align-self: center;
+}
+
+.Stars img {
+    width: 153px;
+    @media (min-width: 480px) {
+        width: clamp(153px, 40vw, 300px);
+    }
+    @media (min-width: 1024px) {
+        margin-top: 0;
+    }
 }
