@@ -1,1 +1,521 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* || Typography */
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-VF.woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* || Colors */
+/* || General Styles */
+html {
+  font-size: 62.5%;
+  /* = 10px */
+  font-family: Montserrat;
+  color: black;
+}
+
+body {
+  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-color: #F2F6FF;
+}
+
+h1 {
+  font-size: 7.2rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+/* || Custom Styles */
+.HeaderContainer {
+  padding: 2rem 2rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Menu {
+  display: none;
+}
+
+.Hamburger {
+  border: none;
+  background: none;
+}
+
+.HeroContainer {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Logo img {
+  width: 45px;
+  height: auto;
+}
+
+.MainHeading {
+  color: #3913B8;
+  white-space: nowrap;
+}
+
+.MainSubHeading {
+  margin-top: 1rem;
+}
+
+.MainIntro {
+  margin-top: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.HeroButtons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PrimaryButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  width: 12.5rem;
+  height: 5rem;
+  background-color: #2fb5fc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.SecondaryButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  width: 12.5rem;
+  height: 5rem;
+  border: 2px solid #2fb5fc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.CTA1 {
+  margin-right: 2rem;
+}
+
+.ProfileImage {
+  margin-top: 2rem;
+}
+
+.Socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 240px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.SocialLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.25rem;
+  width: 42px;
+  height: 42px;
+}
+
+.SocialLink img {
+  width: 24px;
+  height: auto;
+}
+
+.Github {
+  background-color: black;
+}
+
+.Linkedin {
+  background-color: #2262AF;
+}
+
+.Mail {
+  background-color: #D64A3A;
+}
+
+.Projects {
+  margin-top: 4rem;
+}
+
+.ProjectsContainer {
+  padding: 0 2rem;
+}
+
+.SectionHeading {
+  margin-bottom: 2rem;
+}
+
+.ProjectsGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.Project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 231px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 4rem;
+}
+
+.TitleLink {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.ProjectContent {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ProjectInfo {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.LiveLink {
+  margin: 2rem 0;
+  width: 92px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.SeeMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ArrowIcon {
+  margin-left: 1rem;
+}
+
+.Skills {
+  margin-top: 2rem;
+}
+
+.SkillsContainer {
+  padding: 0 2rem;
+}
+
+.Abilities {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.Ability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 6rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.AbilityText {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.Technologies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  place-items: center;
+  row-gap: 3rem;
+  margin-top: 2rem;
+}
+
+.Technology img {
+  width: auto;
+  height: 68px;
+}
+
+.Footer {
+  margin-top: 2rem;
+}
+
+.ContactContainer {
+  padding: 0 2rem;
+}
+
+.ContactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.InputContainer {
+  background-color: #E0E0E0;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  height: 4.8rem;
+}
+
+.InputContainer input {
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-family: Montserrat;
+}
+
+.InputContainer input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.InputContainer input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.InputContainer input::-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.InputContainer input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.InputContainer img {
+  width: 1.8rem;
+  height: auto;
+}
+
+.TextSection {
+  background-color: #E0E0E0;
+  padding: 0 2rem;
+  border-radius: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.Message {
+  background-color: #E0E0E0;
+  border: none;
+  width: 100%;
+  padding-top: 2rem;
+  resize: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea::placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Submit {
+  background: none;
+  margin-top: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ContactExtra {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ContactText {
+  line-height: 1.3;
+}
+
+.MailLink {
+  text-decoration: none;
+  color: #3913B8;
+  font-weight: 700;
+}
+
+.ContactSocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.Stars {
+  margin: 2rem 0 4rem 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=style.css.map */

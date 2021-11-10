@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
 
         <!-- Favicons -->
@@ -40,25 +41,199 @@
         <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
     </head>
     <body>
-        <header class="Header">
+        <header id="home" class="Header">
             <div class="HeaderContainer">
-                We are live bitches!
+                <a class="Logo" href="#home">
+                    <img src="assets/images/Logo.svg" width="" height="" alt="Return to homepage" />
+                </a>
+                <button class="Hamburger">
+                    <img src="assets/images/hamburger.svg" alt="">
+                </button>
+                <nav class="Menu">
+                    <ul class="MenuList">
+                        <li class="MenuItem"><a href="#projects" class="MenuLink">Projects</a></li>
+                        <li class="MenuItem"><a href="#skills" class="MenuLink">Skills</a></li>
+                        <li class="MenuItem"><a href="#contact" class="MenuLink">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main class="Main">
             <section class="Hero">
-                <div class="HeroContainer"></div>
+                <div class="HeroContainer">
+                    <div class="HeroContent">
+                        <h1 class="MainHeading">David Dobondi</h1>
+                        <h2 class="MainSubHeading">Frontend Developer</h2>
+                        <p class="MainIntro">Aspiring to make the digital world a better place, helping teams and individuals deliver high quality products.</p>
+                        <div class="HeroButtons">
+                            <a class="PrimaryButton CTA1" href="#contact"><span class="ButtonText">Contact me</span></a>
+                            <a class="SecondaryButton CTA2" href="#projects">See my work</a>
+                        </div>
+                    </div>
+                    <picture>
+                        <source srcset="assets/images/ProfileBig.webp" type="image/webp" media="(min-width: 480px)" />
+                        <source srcset="assets/images/ProfileBig.png" type="image/png" media="(min-width: 480px)" />
+                        <source srcset="assets/images/ProfileSmall.webp" type="image/webp" media="" />
+                        <source srcset="assets/images/ProfileSmall.png" type="image/png" media="" />
+                        <img src="assets/images/ProfileBig.webp" alt="David Dobondi's portrait" class="ProfileImage"/>
+                    </picture>
+                    <div class="Socials">
+                        <a href="github.com/dobondi" class="SocialLink Github">
+                            <img src="assets/images/Github.svg" />
+                        </a>
+                        <a href="linkedin.com/in/daviddobondi" class="SocialLink Linkedin">
+                            <img src="assets/images/Linkedin.svg" />
+                        </a>
+                        <a href="mailto:dobondiwork@gmail.com" class="SocialLink Mail">
+                            <img src="assets/images/Mail.svg" />
+                        </a>
+                    </div>
+                </div>
             </section>
-            <section class="Projects">
-                <div class="ProjectsContainer"></div>
+
+            <section id="projects" class="Projects">
+                <div class="ProjectsContainer">
+                    <h2 class="SectionHeading">Projects</h2>
+                    <div class="ProjectsGrid">
+                        <div class="Project">
+                            <a class="ImageLink" href="dobondi.github.io/aqva-vr">
+                                <picture>
+                                    <source srcset="assets/images/AqvaBig.webp" type="image/webp" media="(min-width: 480px)" />
+                                    <source srcset="assets/images/AqvaBig.png" type="image/png" media="(min-width: 480px)" />
+                                    <source srcset="assets/images/AqvaSmall.webp" type="image/webp" media="" />
+                                    <source srcset="assets/images/AqvaSmall.png" type="image/png" media="" />
+                                    <img src="assets/images/AqvaBig.webp" alt="Aqva's live website" />
+                                </picture>
+                            </a>
+                            <div class="ProjectContent">
+                            <a class="TitleLink" href="dobondi.github.io/aqva-vr">
+                                <h3 class="ProjectTitle">Aqva-VR</h3>
+                            </a>
+
+                            <p class="ProjectInfo">Come join the biggest virtual reality community that specializes in aquatic landscapes. Sign up for our free trial. No CC required.</p>
+
+
+                            <a class="SecondaryButton LiveLink" href="dobondi.github.io/aqva-vr"> See Live </a>
+                        </div>
+                        </div>
+                        <div class="Project">
+                            <a class="ImageLink" href="dobondi.github.io/aqva-vr">
+                                <picture>
+                                    <source srcset="assets/images/AqvaBig.webp" type="image/webp" media="(min-width: 480px)" />
+                                    <source srcset="assets/images/AqvaBig.png" type="image/png" media="(min-width: 480px)" />
+                                    <source srcset="assets/images/AqvaSmall.webp" type="image/webp" media="" />
+                                    <source srcset="assets/images/AqvaSmall.png" type="image/png" media="" />
+                                    <img src="assets/images/AqvaBig.webp" alt="Aqva's live website" />
+                                </picture>
+                            </a>
+                            <div class="ProjectContent">
+                            <a class="TitleLink" href="dobondi.github.io/aqva-vr">
+                                <h3 class="ProjectTitle">Aqva-VR</h3>
+                            </a>
+
+                            <p class="ProjectInfo">Come join the biggest virtual reality community that specializes in aquatic landscapes. Sign up for our free trial. No CC required.</p>
+
+
+                            <a class="SecondaryButton LiveLink" href="dobondi.github.io/aqva-vr"> See Live </a>
+                        </div>
+                        </div>
+                        <a class="SeeMore"> See More <img class="ArrowIcon" src="assets/images/arrow.svg" /> </a>
+
+                    </div>
+                </div>
             </section>
-            <section class="Skills">
-                <div class="SkillsContainer"></div>
+
+            <section id="skills" class="Skills">
+                <div class="SkillsContainer">
+                    <h2 class="SectionHeading">Skills</h2>
+                    <div class="Abilities">
+                        <div class="Ability">
+                            <h3 class="AbilityText">Responsive web design</h3>
+                        </div>
+                        <div class="Ability">
+                            <h3 class="AbilityText">Search optimization</h3>
+                        </div>
+                        <div class="Ability">
+                            <h3 class="AbilityText">Accessibility</h3>
+                        </div>
+                        <div class="Ability">
+                            <h3 class="AbilityText">Web performance</h3>
+                        </div>
+                        <div class="Ability">
+                            <h3 class="AbilityText">User interface design</h3>
+                        </div>
+                        <div class="Ability">
+                            <h3 class="AbilityText">User experience design</h3>
+                        </div>
+                    </div>
+                    <div class="Technologies">
+                        <div class="Technology">
+                            <img src="assets/images/HTML.svg" alt="HTML" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/CSS.svg" alt="CSS" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/JS.svg" alt="JS" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/React.svg" alt="React" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/Tailwind.svg" alt="Tailwind" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/Sass.svg" alt="Sass" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/Git.svg" alt="Git" />
+                        </div>
+                        <div class="Technology">
+                            <img src="assets/images/Figma.svg" alt="Figma" />
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="Footer">
-            <section class="Contact">
-                <div class="ContactContainer"></div>
+            <section id="contact" class="Contact">
+                <div class="ContactContainer">
+                    <h2 class="SectionHeading">Contact</h2>
+                    <div class="ContactContent">
+                        <form class="ContactForm">
+                            <div class="InputContainer">
+                                <img src="assets/images/avatar.svg" alt="" />
+                                <input type="text" name="name" id="name" placeholder="Name" required />
+                            </div>
+                            <div class="InputContainer">
+                                <img src="assets/images/form-mail.png" alt="" />
+                                <input type="email" placeholder="Email" name="email" id="email" required />
+                            </div>
+                            <div class="TextSection">
+                                <textarea class="Message" placeholder="Message" id="message" name="message" rows="12"></textarea>
+                            </div>
+                            <input class="Submit SecondaryButton" type="submit" name="sumbit" value="Submit" />
+                        </form>
+                        <div class="ContactExtra">
+                            <p class="ContactText">Thank you for checking out my website, I hope we can work together in the near future. You can contact me using the form on the left, or at <a class="MailLink" href="mailto:dobondiwork@gmail.com">dobondiwork@gmail.com.</a> Also you can find me on my socials links down below.</p>
+                            <div class="ContactSocials">
+                                <a href="github.com/dobondi" class="SocialLink Github">
+                                    <img src="assets/images/Github.svg" />
+                                </a>
+                                <a href="linkedin.com/in/daviddobondi" class="SocialLink Linkedin">
+                                    <img src="assets/images/Linkedin.svg" />
+                                </a>
+                            </div>
+                            <picture class="Stars">
+                                <source srcset="assets/images/StarsBig.webp" type="image/webp" media="(min-width: 480px)" />
+                                <source srcset="assets/images/StarsBig.png" type="image/png" media="(min-width: 480px)" />
+                                <source srcset="assets/images/StarsSmall.webp" type="image/webp" media="" />
+                                <source srcset="assets/images/StarsSmall.png" type="image/png" media="" />
+                                <img src="assets/images/StarsBig.webp" alt="" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
             </section>
         </footer>
     </body>
