@@ -450,6 +450,10 @@ p {
   background-color: #d64a3a;
 }
 
+.Phone {
+  background-color: #22D849;
+}
+
 .Projects {
   margin-top: clamp(4rem, 7vw, 15rem);
 }
